@@ -1,0 +1,166 @@
+@mixin  font($weight, $size, $color) {
+    font-family: inherit;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: 23.85px;
+    color: $color;
+}
+
+@mixin responsive-button {
+  width: 40px;
+    height: 40px;
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    display: none;
+
+
+
+}
+
+
+.dashboard-container{
+
+
+  input{
+    @include responsive-button();
+    margin: 0;
+    opacity: 0;
+    z-index: 100;
+
+
+
+  }
+
+  button{
+
+    @include responsive-button();
+    background-color: #363740;
+    border: 2px solid grey;
+    z-index: 90;
+    border-radius: 3px;
+
+
+
+
+  }
+
+  input:checked ~ div{
+    display: inline-block;
+  }
+  .dashboard {
+    
+    min-width: 200px;
+    width: 18vw;
+    height: 100vh;
+    background-color: #363740;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: auto;
+  
+  
+  
+    ul {
+      li {
+        @include font(400,16px,#A4A6B3 );  
+        height: 6.5vh;
+        line-height: 6.5vh;
+      }
+    }
+  
+    li:hover{
+      background-color: #3e4049;
+      border-left: 2px solid #DDE2FF;
+      color: #DDE2Ff;
+      svg{
+        color: #dde2ff;
+      }
+      
+    }
+
+    li:focus{
+      background-color: #3e4049;
+      border-left: 2px solid #DDE2FF;
+      color: #DDE2Ff;
+      svg{
+        color: #dde2ff;
+      }
+        }
+    svg {
+      margin-left: 15%;
+      margin-right: 12%;
+    }
+
+  
+    .box-1 {
+      min-height: 70px;
+      height: 22vh;
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  
+      
+      div {
+        margin-right: 15px;
+
+        width: 30px;
+        height: 30px;
+        background-color: #3751ff;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        div {
+
+
+          width: 15px;
+          height: 15px;
+          background-color: white;
+          border-radius: 0px 10px 10px 0px;
+          margin: 0;
+        }
+      }
+      p {
+          @include font(700,19px,#a4a6b3 );   
+      }
+    }
+    .box-2 {
+      border-bottom: 1px solid #40414a;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 550px) {
+ 
+ .dashboard-container{
+   input{
+     display: inline;
+   }
+   button{
+     display: inline;
+   }
+   .dashboard {
+    position: fixed;
+    width: 100vw;
+     display: none; 
+   }
+
+ }
+}
+
+
+.dashboardFocus{
+  
+    background-color: #3e4049;
+    border-left: 2px solid #DDE2FF;
+    color: #DDE2Ff;
+  
+    svg{
+      color: #dde2ff;
+    }
+}

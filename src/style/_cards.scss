@@ -1,0 +1,39 @@
+.cards{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-flow: row wrap;
+
+    div{
+        min-width: 200px;
+        width: 17vw;
+        min-width: 200px;
+        height: 7vw;
+        border: 1px solid lightgrey;
+        border-radius: 8px;
+        background-color: white;
+        margin-bottom: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        :first-child{
+            font-weight: bold;
+            color: #9FA2B4;
+            font-size: 2vw;
+            margin: 0;
+        }
+
+        :nth-child(2){
+            font-size: 3vw;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+    }
+
+
+}
