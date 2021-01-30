@@ -18,7 +18,7 @@ const details = [
   {
     photo: "https://i.pravatar.cc/150?img=12",
     messages: "Contact Email not Linked",
-    birthLocation: "Tehran",
+    birthLocation: "France",
     dateOfBirth: "on 24.05.2000",
     registerationDate: "May 26, 2019",
     registerationTime: "6:30 PM",
@@ -54,7 +54,7 @@ const details = [
   {
     photo: "https://i.pravatar.cc/150?img=13",
     messages: "Unable to add replies",
-    birthLocation: "Tabriz",
+    birthLocation: "Finland",
     dateOfBirth: "on 04.11.2004",
     registerationDate: "apr 02, 2013",
     registerationTime: "3:20 PM",
