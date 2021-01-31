@@ -1,3 +1,4 @@
+//4 boxes showing statics
 import React from "react";
 import "../style/style.scss";
 import axios from "axios";
