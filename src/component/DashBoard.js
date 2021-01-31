@@ -23,6 +23,7 @@ export default class DashBoard extends React.Component{
       constructor(props) {
             super(props);
             this.state = {
+              //overView and Users panel when they are focused
               overViewFocus: true,
               usersFocus: false
             };
