@@ -5,6 +5,7 @@ import axios from "axios";
 
 export default class Card extends React.Component {
   constructor(props) {
+    super(props);
     this.state = {};
   }
 
